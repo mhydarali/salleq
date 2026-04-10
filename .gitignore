@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment files
+.env
+.env.*
+
+# Node / frontend
+node_modules/
+dist/
+app/client/dist/
+app/client/out/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local notebooks and logs
+*.ipynb_checkpoints
+*.log
+
+# Local provenance exports retained outside the curated repo
+raw_export/

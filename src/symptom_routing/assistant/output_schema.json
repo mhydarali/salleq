@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SalleQSymptomRoutingOutput",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "language",
+    "patient_age_group",
+    "primary_symptom",
+    "symptom_category",
+    "duration_hours",
+    "severity_indicators",
+    "emergency_flags",
+    "emergency_stop",
+    "provisional_ctas_level",
+    "provisional_ctas_label",
+    "recommended_facility_type",
+    "recommended_urgency_band",
+    "queue_eligible",
+    "risk_score",
+    "risk_band",
+    "reasoning_summary"
+  ],
+  "properties": {
+    "language": {
+      "type": "string",
+      "enum": ["en", "fr", "unknown"]
+    },
+    "patient_age_group": {
+      "type": "string",
+      "enum": ["infant", "child", "adult", "older_adult", "unknown"]
+    },
+    "primary_symptom": {
+      "type": "string"
+    },
+    "symptom_category": {
+      "type": "string",
+      "enum": ["infection", "injury", "respiratory", "cardiac", "neurological", "digestive", "immune", "other"]
+    },
+    "duration_hours": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "severity_indicators": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "emergency_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "emergency_stop": {
+      "type": "boolean"
+    },
+    "provisional_ctas_level": {
+      "type": "integer",
+      "enum": [1, 2, 3, 4, 5]
+    },
+    "provisional_ctas_label": {
+      "type": "string",
+      "enum": ["Resuscitation", "Emergent", "Urgent", "Less Urgent", "Non-Urgent"]
+    },
+    "recommended_facility_type": {
+      "type": "string",
+      "enum": ["hospital", "ambulatory", "unknown"]
+    },
+    "recommended_urgency_band": {
+      "type": "string",
+      "enum": ["emergency", "same_day", "low_acuity", "unknown"]
+    },
+    "queue_eligible": {
+      "type": "boolean"
+    },
+    "risk_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "risk_band": {
+      "type": "string",
+      "enum": ["low", "moderate", "high", "critical"]
+    },
+    "reasoning_summary": {
+      "type": "string"
+    }
+  }
+}

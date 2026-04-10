@@ -1,0 +1,25 @@
+bundle:
+  name: salleq_ctas_virtual_waiting_room
+
+include:
+  - resources/*.yml
+
+variables:
+  catalog:
+    default: montreal_hackathon
+  schema:
+    default: salleq_ctas_virtual_waiting_room
+  warehouse_id:
+    default: "<your-warehouse-id>"
+
+targets:
+  dev:
+    default: true
+    mode: development
+    workspace:
+      host: https://<your-workspace>.cloud.databricks.com
+      root_path: /Workspace/Users/${workspace.current_user.userName}/${bundle.name}
+    variables:
+      catalog: montreal_hackathon
+      schema: salleq_ctas_virtual_waiting_room
+      warehouse_id: "<your-warehouse-id>"

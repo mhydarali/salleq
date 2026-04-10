@@ -1,0 +1,44 @@
+command:
+  - "streamlit"
+  - "run"
+  - "app.py"
+  - "--server.port=8000"
+  - "--server.address=0.0.0.0"
+  - "--server.headless=true"
+  - "--browser.gatherUsageStats=false"
+
+env:
+  - name: ENV
+    value: "production"
+  - name: PYTHONPATH
+    value: "/app/python/source_code"
+  - name: DATABRICKS_WAREHOUSE_ID
+    value: "<your-warehouse-id>"
+  - name: DATABRICKS_CATALOG
+    value: "montreal_hackathon"
+  - name: DATABRICKS_SCHEMA
+    value: "salleq_ctas_virtual_waiting_room"
+  - name: APP_ENCRYPTION_KEY
+    value: "<generate-a-fernet-key>"
+  - name: PATIENT_AGENT_MODE
+    value: "endpoint"
+  - name: STAFF_AGENT_MODE
+    value: "endpoint"
+  - name: PATIENT_AGENT_ENDPOINT
+    value: "<your-patient-agent-endpoint>"
+  - name: STAFF_AGENT_ENDPOINT
+    value: "<your-staff-agent-endpoint>"
+  - name: KNOWLEDGE_AGENT_ENDPOINT
+    value: "<your-knowledge-agent-endpoint>"
+  - name: LIVE_AGENT_ENDPOINT
+    value: "<your-live-data-agent-endpoint>"
+  - name: DATAROOM_SOURCE_URL
+    value: "https://www.quebec.ca/en/health/health-system-and-services/service-organization/quebec-health-system-and-its-services/situation-in-emergency-rooms-in-quebec"
+  - name: FACILITY_MASTER_SOURCE_URL
+    value: "https://www150.statcan.gc.ca/n1/en/pub/13-26-0001/2020001/ODHF_v1.1.zip"
+  - name: STREAMLIT_THEME_PRIMARY_COLOR
+    value: "#173F8A"
+  - name: STREAMLIT_THEME_BACKGROUND_COLOR
+    value: "#F5F7FC"
+  - name: STREAMLIT_THEME_SECONDARY_BACKGROUND_COLOR
+    value: "#FFFFFF"

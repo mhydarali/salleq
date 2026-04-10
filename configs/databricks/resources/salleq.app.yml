@@ -1,0 +1,6 @@
+resources:
+  apps:
+    salleq:
+      name: salleq-ctas-wait-room
+      description: "SalleQ Quebec-first CTAS-aware virtual waiting room"
+      source_code_path: ../..

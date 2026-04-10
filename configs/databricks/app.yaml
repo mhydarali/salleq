@@ -1,0 +1,33 @@
+command:
+  - "uvicorn"
+  - "src.app.server.app:app"
+  - "--host"
+  - "0.0.0.0"
+  - "--port"
+  - "8000"
+
+env:
+  - name: ENV
+    value: "production"
+  - name: PYTHONPATH
+    value: "/app/python/source_code"
+  - name: DATABRICKS_WAREHOUSE_ID
+    value: "<your-warehouse-id>"
+  - name: DATABRICKS_CATALOG
+    value: "montreal_hackathon"
+  - name: DATABRICKS_SCHEMA
+    value: "salleq_ctas_virtual_waiting_room"
+  - name: APP_ENCRYPTION_KEY
+    value: "<generate-a-fernet-key>"
+  - name: PATIENT_AGENT_MODE
+    value: "endpoint"
+  - name: STAFF_AGENT_MODE
+    value: "local"
+  - name: PATIENT_AGENT_ENDPOINT
+    value: "<your-patient-agent-endpoint>"
+  - name: STAFF_AGENT_ENDPOINT
+    value: ""
+  - name: DATAROOM_SOURCE_URL
+    value: "https://www.quebec.ca/en/health/health-system-and-services/service-organization/quebec-health-system-and-its-services/situation-in-emergency-rooms-in-quebec"
+  - name: FACILITY_MASTER_SOURCE_URL
+    value: "https://www150.statcan.gc.ca/n1/en/pub/13-26-0001/2020001/ODHF_v1.1.zip"
