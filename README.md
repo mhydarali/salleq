@@ -20,6 +20,8 @@ Emergency departments are crowded, but many patients still need help deciding wh
 - **The Databricks story was part of the product story.** The deck showed a governed multi-agent pipeline: natural-language symptoms feeding a knowledge assistant, a Quebec ER live-data agent, and a symptom-routing agent supervised through Databricks and Unity Catalog.
 - **The roadmap stayed grounded.** The deck explicitly called out current limits around hospital integration, privacy, and private-clinic coverage, then pointed to bi-directional hospital integration and a stronger staff dashboard as the next steps.
 
+![Powered by Databricks Intelligence slide from the SalleQ hackathon deck](docs/hackathon/powered-by-databricks-intelligence-slide.png)
+
 ## What SalleQ Does
 
 - Accepts patient symptoms in plain language
@@ -103,6 +105,7 @@ salleq/
 - [`Second-place award photo`](docs/hackathon/salleq-second-place-award-photo.jpg)
 - [`Second-place certificate photo`](docs/hackathon/salleq-second-place-certificate.jpg)
 - [`Team photo from the event`](docs/hackathon/salleq-hackathon-team-photo.jpg)
+- [`Powered by Databricks Intelligence slide`](docs/hackathon/powered-by-databricks-intelligence-slide.png)
 
 ## Running Locally
 

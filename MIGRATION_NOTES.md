@@ -56,6 +56,8 @@ These assets were added from local files outside Databricks to better document t
   Source: local photo `IMG_5074.JPG`
 - `docs/hackathon/salleq-hackathon-team-photo.jpg`
   Source: local photo `330a79fb-0ea9-4702-977c-0419a13e1735.JPG`
+- `docs/hackathon/powered-by-databricks-intelligence-slide.png`
+  Source: extracted slide image from local deck `SalleQ_AI_Virtual_ER_(4).pptx`
 
 ## Workspace Artifacts Found But Not Promoted
 
