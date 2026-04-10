@@ -4,6 +4,8 @@ SalleQ is an AI-assisted virtual waiting room for non-emergency care in Quebec. 
 
 The product accepts natural-language symptom input, estimates a conservative provisional CTAS level, calculates a risk score, detects emergency red flags, and recommends the best care site based on acuity, live wait conditions, facility type, and distance.
 
+![SalleQ team after placing second at the EY x Databricks AI Agent Hackathon](docs/hackathon/salleq-second-place-award-photo.jpg)
+
 ## Why It Matters
 
 Emergency departments are crowded, but many patients still need help deciding where to go. SalleQ was built to reduce that uncertainty. It combines symptom intake, triage-style routing, live Quebec emergency room data, and queue-aware recommendations in one flow.
@@ -84,6 +86,13 @@ salleq/
 - MLflow / Databricks Agents
 - PySpark
 - BeautifulSoup, Requests, HTTPX
+
+## Hackathon Assets
+
+- [`SalleQ hackathon deck`](docs/hackathon/SalleQ_Hackathon_Deck.pptx)
+- [`Second-place award photo`](docs/hackathon/salleq-second-place-award-photo.jpg)
+- [`Second-place certificate photo`](docs/hackathon/salleq-second-place-certificate.jpg)
+- [`Team photo from the event`](docs/hackathon/salleq-hackathon-team-photo.jpg)
 
 ## Running Locally
 

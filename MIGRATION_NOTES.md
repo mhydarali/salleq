@@ -44,6 +44,19 @@ These were exported locally but not promoted into the curated repo layout:
   Source: `/Users/phuong.dong@mail.mcgill.ca/databricks_apps/salleqretry_2026_03_27-19_50`
   Why kept: alternate app snapshot for comparison and provenance.
 
+## Supplementary Recruiter-Facing Assets
+
+These assets were added from local files outside Databricks to better document the project story and hackathon outcome:
+
+- `docs/hackathon/SalleQ_Hackathon_Deck.pptx`
+  Source: local presentation file `SalleQ_AI_Virtual_ER_(4).pptx`
+- `docs/hackathon/salleq-second-place-award-photo.jpg`
+  Source: local photo `databricks_ey_2nd_place.jpeg`
+- `docs/hackathon/salleq-second-place-certificate.jpg`
+  Source: local photo `IMG_5074.JPG`
+- `docs/hackathon/salleq-hackathon-team-photo.jpg`
+  Source: local photo `330a79fb-0ea9-4702-977c-0419a13e1735.JPG`
+
 ## Workspace Artifacts Found But Not Promoted
 
 - Databricks Apps:
