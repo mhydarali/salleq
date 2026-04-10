@@ -10,6 +10,16 @@ The product accepts natural-language symptom input, estimates a conservative pro
 
 Emergency departments are crowded, but many patients still need help deciding where to go. SalleQ was built to reduce that uncertainty. It combines symptom intake, triage-style routing, live Quebec emergency room data, and queue-aware recommendations in one flow.
 
+## Highlights From The Pitch Deck
+
+- **The problem is large and immediate.** The deck frames Quebec emergency care as a capacity problem: roughly 2 million patients without a primary care provider, non-critical waits reaching 18 hours, and an estimated 30 to 50 percent of ER visits being non-urgent.
+- **There is precedent for the model.** The team benchmarked virtual queue programs such as Sault Area Hospital's virtual home waiting room, which reported a 25 percent drop in ER wait times, shorter length of stay, and fewer patients leaving without being seen.
+- **SalleQ was pitched as a Quebec-specific redesign of the intake journey.** The current state is blind arrival, manual physical triage, and crowded waiting rooms. The SalleQ state is predictive load balancing, AI-assisted remote symptom intake, and safe at-home waiting until the patient should leave.
+- **The user flow was presented as a four-step product.** Context and identity capture, AI triage with hard-stop safety checks, precision routing to the most appropriate facility, and a virtual waiting room with dynamic notifications and timed arrival.
+- **The routing logic was intentionally practical.** The pitch emphasized distance, live availability, wait time, and acuity match as the main ranking signals rather than generic recommendation logic.
+- **The Databricks story was part of the product story.** The deck showed a governed multi-agent pipeline: natural-language symptoms feeding a knowledge assistant, a Quebec ER live-data agent, and a symptom-routing agent supervised through Databricks and Unity Catalog.
+- **The roadmap stayed grounded.** The deck explicitly called out current limits around hospital integration, privacy, and private-clinic coverage, then pointed to bi-directional hospital integration and a stronger staff dashboard as the next steps.
+
 ## What SalleQ Does
 
 - Accepts patient symptoms in plain language
