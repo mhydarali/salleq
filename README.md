@@ -42,19 +42,7 @@ Emergency departments are crowded, but many patients still need help deciding wh
 
 ## System Overview
 
-```mermaid
-flowchart LR
-    A["Patient symptom input"] --> B["Symptom-routing engine"]
-    B --> C{"Emergency red flags?"}
-    C -->|Yes| D["Escalate to emergency care"]
-    C -->|No| E["Provisional CTAS + risk band"]
-    E --> F["Facility live data + master data"]
-    F --> G["Matching and ranking layer"]
-    G --> H["Recommendations API"]
-    H --> I["React client / legacy Streamlit flow"]
-    H --> J["Queue reservation and tracking"]
-    F --> K["Staff operations dashboard"]
-```
+![Powered by Databricks Intelligence system overview from the SalleQ hackathon deck](docs/hackathon/powered-by-databricks-intelligence-slide.png)
 
 ## Architecture
 
